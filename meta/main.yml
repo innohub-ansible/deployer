@@ -1,0 +1,15 @@
+---
+galaxy_info:
+  author: Andrew Angelo Ang
+  description: Creates a deployer user account and sets up ssh keys and service directories.
+  company: InnoHub, Inc.
+  license: MIT
+  min_ansible_version: 1.4
+  platforms:
+    - name: Ubuntu
+        versions:
+          - precise
+          - trusty
+  categories:
+    - system
+dependencies: []

@@ -1,0 +1,23 @@
+---
+
+- name: Create deployer user
+  sudo: true
+  user:
+    name=deployer
+    comment="Deployer"
+    shell=/bin/bash
+    home=/deployer
+
+- name: Lock deployer password
+  sudo: true
+  shell:
+    passwd -l deployer
+
+- name: Create services directory
+  sudo: true
+  sudo_user: deployer
+  file:
+    state=directory
+    path=/deployer/services
+
+- include: ssh.yml
