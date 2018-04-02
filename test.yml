@@ -1,7 +1,7 @@
 - hosts: all
   vars:
-    deployer_authorized_keys:
-      - ssh-rsa theactualkeyshouldbehere user@example.com
+    deployer_authorized_keys: |
+      ssh-rsa theactualkeyshouldbehere user@example.com
     deployer_ssh_private_key: |+
       -----BEGIN RSA PRIVATE KEY-----
       MIIEpAIBAAKCAQEAvbtseP1SZMsWiqVcpVTyC3F9EcIjlbD18bF18cllXs7KpN90
